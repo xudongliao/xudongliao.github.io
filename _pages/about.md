@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>Room 3661, HKUST</p>
     <p>Clear Water Bay</p>
-    <p>Kowloon, Hong Kong SAR</p>
+    <p>Kowloon, Hong Kong SAR, China</p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
