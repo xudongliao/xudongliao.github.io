@@ -36,55 +36,54 @@
       year: 2019.3 - 2019.11
       description:
         - Advised by Prof. Yanjiao Chen
-        - Research on the topic of "Deep reinforcement learning based Internet congestion control".  
+        - Research on the topic of "Deep reinforcement learning based Internet congestion control".
 
 - title: Teaching Experience
   type: time_table
   contents:
     - year: 2023 Fall
-      items: 
+      items:
         - TA of COMP2611 Computer Organization, HKUST
     - year: 2023 Spring
-      items: 
+      items:
         - TA of COMP3511 Operating System, HKUST
     - year: 2022 Spring
-      items: 
+      items:
         - TA of COMP3511 Operating System, HKUST
     - year: 2021 Spring
-      items: 
+      items:
         - TA of COMP3511 Operating System, HKUST
 
 - title: Academic Services
   type: time_table
   contents:
     - year: 2023
-      items: 
+      items:
         - Web chair of 7th Asia-Pacific Workshop on Networking (APNet'23)
     - year: 2022
-      items: 
+      items:
         - CoNEXT'22 Review Helper
     - year: 2021
-      items: 
+      items:
         - INFOCOM'22 Review Helper
-
 
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2020
-      items: 
+      items:
         - Postgraduate Studentship, HKUST
     - year: 2020
-      items: 
+      items:
         - Outstanding Graduate, Wuhan University
     - year: 2019
-      items: 
+      items:
         - Yi. scholarship, Wuhan University
     - year: 2018
-      items: 
+      items:
         - Yi. scholarship, Wuhan University
     - year: 2017
-      items: 
+      items:
         - Yi. scholarship, Wuhan University
 
 - title: Other Interests
