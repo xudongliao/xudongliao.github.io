@@ -708,9 +708,11 @@ footer.sticky-bottom {
 
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          // border-bottom: 1px dashed var(--global-theme-color);
+          color: var(--global-text-color);
 
           &:hover {
+            color: var(--global-theme-color);
             border-bottom-style: solid;
             text-decoration: none;
           }
@@ -719,6 +721,7 @@ footer.sticky-bottom {
         > em {
           border-bottom: 1px solid;
           font-style: normal;
+          font-weight: bolder;
         }
 
         > span.more-authors {
