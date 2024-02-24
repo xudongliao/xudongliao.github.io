@@ -2,7 +2,7 @@
 ---
 
 @inproceedings{astraea-eurosys,
-  abbr      = {__EuroSys__},
+  abbr      = {EuroSys},
   title     = {Astraea: Towards Fair and Efficient Learning-based Congestion Control},
   author    = {Liao*, Xudong and Tian*, Han and Zeng, Chaoliang and Wan, Xinchen and Chen, Kai},
   booktitle = {Proceedings of the 19th European Conference on Computer Systems},
@@ -12,7 +12,7 @@
 }
 
 @inproceedings{herald-nsdi,
-  abbr      = {__NSDI__},
+  abbr      = {NSDI},
   title     = {Accelerating Neural Recommendation Training with Embedding Scheduling},
   author    = {Zeng*, Chaoliang and Liao*, Xudong and Cheng, Xiaodian and Tian, Han and Wan, Xinchen and Wang, Hao and Chen, Kai},
   booktitle = {Proceedings of the 21st USENIX Symposium on Networked Systems Design and Implementation},
@@ -22,18 +22,19 @@
 }
 
 @inproceedings{wan2023g3,
-  abbr      = {__SIGMOD__},
+  abbr      = {SIGMOD},
   title     = {Scalable and Efficient Full-Graph GNN Training for Large Graphs},
   author    = {Wan, Xinchen and Xu, Kaiqiang and Liao, Xudong and Jin, Yilun and Chen, Kai and Jin, Xin},
   booktitle = {Proceedings of the ACM on Management of Data},
   pdf       = {g3-sigmod23.pdf},
   selected  = {true},
+  abstract  = {Graph Neural Networks (GNNs) have emerged as powerful tools to capture structural information from graph-structured data, achieving state-of-the-art performance on applications such as recommendation, knowledge graph, and search. Graphs in these domains typically contain hundreds of millions of nodes and billions of edges. However, previous GNN systems demonstrate poor scalability because large and interleaved computation dependencies in GNN training cause significant overhead in current parallelization methods. We present G3, a distributed system that can efficiently train GNNs over billion-edge graphs at scale. G3 introduces GNN hybrid parallelism which synthesizes three dimensions of parallelism to scale out GNN training by sharing intermediate results peer-to-peer in fine granularity, eliminating layer-wise barriers for global collective communication or neighbor replications as seen in prior works. G3 leverages locality-aware iterative partitioning and multi-level pipeline scheduling to exploit acceleration opportunities by distributing balanced workload among workers and overlapping computation with communication in both inter-layer and intra-layer training processes. We show via a prototype implementation and comprehensive experiments that G3 can achieve as much as 2.24x speedup in a 16-node cluster, and better final accuracy over prior works.},
   series    = {SIGMOD 2023},
   year      = {2023}
 }
 
 @article{xu2021tacc,
-  abbr    = {___ArXiv___},
+  abbr    = {ArXiv},
   title   = {Tacc: A full-stack cloud computing infrastructure for machine learning tasks},
   author  = {Xu, Kaiqiang and Wan, Xinchen and Wang, Hao and Ren, Zhenghang and Liao, Xudong and Sun, Decang and Zeng, Chaoliang and Chen, Kai},
   journal = {arXiv preprint arXiv:2110.01556},
@@ -42,7 +43,7 @@
 }
 
 @inproceedings{spine-conext,
-  abbr      = {__CoNEXT__},
+  abbr      = {CoNEXT},
   author    = {Tian*, Han and Liao*, Xudong and Zeng, Chaoliang and Zhang, Junxue and Chen, Kai},
   title     = {Spine: An Efficient DRL-Based Congestion Control with Ultra-Low Overhead},
   year      = {2022},
@@ -51,13 +52,14 @@
   url       = {https://doi.org/10.1145/3555050.3569125},
   doi       = {10.1145/3555050.3569125},
   booktitle = {Proceedings of the 18th International Conference on Emerging Networking EXperiments and Technologies},
+  abstract  = {Previous congestion control (CC) algorithms based on deep reinforcement learning (DRL) directly adjust flow sending rate to respond to dynamic bandwidth change, resulting in high inference overhead. Such overhead may consume considerable CPU resources and hurt the datapath performance. In this paper, we present Spine, a hierarchical congestion control algorithm that fully utilizes the performance gain from deep reinforcement learning but with ultra-low overhead. At its heart, Spine decouples the congestion control task into two subtasks in different timescales and handles them with different components: i) a lightweight CC executor that performs fine-grained control responding to dynamic bandwidth changes, and ii) an RL agent that works at a coarse-grained level that generates control sub-policies for the CC executor. Such two-level control architecture can provide fine-grained DRL-based control with a low model inference overhead. Real-world experiments and emulations show that Spine achieves consistent high performance across various network conditions with an ultra-low control overhead reduced by at least 80\% compared to its DRL-based counterparts, similar to classic CC schemes such as Cubic.},
   series    = {CoNEXT 2022},
   pdf       = {spine-conext22.pdf},
   selected  = {true}
 }
 
 @article{spine-ton,
-  abbr      = {__TON__},
+  abbr      = {TON},
   author    = {Tian*, Han and Liao*, Xudong and Zeng, Chaoliang and Sun, Decang and Zhang, Junxue and Chen, Kai},
   journal   = {IEEE/ACM Transactions on Networking},
   title     = {Efficient DRL-Based Congestion Control With Ultra-Low Overhead},
@@ -69,7 +71,7 @@
 }
 
 @inproceedings{mocc-eurosys,
-  abbr      = {__EuroSys__},
+  abbr      = {EuroSys},
   author    = {Ma, Yiqing and Tian, Han and Liao, Xudong and Zhang, Junxue and Wang, Weiyan and Chen, Kai and Jin, Xin},
   title     = {Multi-Objective Congestion Control},
   year      = {2022},
@@ -77,13 +79,14 @@
   url       = {https://doi.org/10.1145/3492321.3519593},
   doi       = {10.1145/3492321.3519593},
   booktitle = {Proceedings of the 17th European Conference on Computer Systems},
+  abstract  = {Decades of research on Internet congestion control (CC) have produced a plethora of algorithms that optimize for different performance objectives. Applications face the challenge of choosing the most suitable algorithm based on their needs, and it takes tremendous efforts and expertise to customize CC algorithms when new demands emerge. In this paper, we explore a basic question: can we design a single CC algorithm to satisfy different objectives? We propose MOCC, the first multi-objective congestion control algorithm that attempts to address this question. The core of MOCC is a novel multi-objective reinforcement learning framework for CC to automatically learn the correlations between different application requirements and the corresponding optimal control policies. Under this framework, MOCC further applies transfer learning to transfer the knowledge from past experience to new applications, quickly adapting itself to a new objective even if it is unforeseen. We provide both user-space and kernel-space implementation of MOCC. Real-world Internet experiments and extensive simulations show that MOCC supports well multi-objective, competing or outperforming the best existing CC algorithms on each individual objectives, and quickly adapting to new application objectives in 288 seconds (14.2x faster than prior work) without compromising old ones.},
   series    = {EuroSys 2022},
-  pdf       = {mocc-eurosys23.pdf},
+  pdf       = {mocc-eurosys22.pdf},
   selected  = {true}
 }
 
 @inbook{auto-chapter,
-  abbr      = {__Book__},
+  abbr      = {Book},
   author    = {Chen, Li and Lingys, Justinas and Chen, Kai and Liao, Xudong},
   publisher = {John Wiley & Sons, Ltd},
   isbn      = {9781119675525},

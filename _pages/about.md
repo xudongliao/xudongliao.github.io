@@ -2,16 +2,13 @@
 layout: about
 title: About
 permalink: /
-# subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: PhD Candidate, HKUST, Hong Kong SAR, China
 
 profile:
-  align: left
+  align: right
   image: xudong.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Room 3661, HKUST</p>
-    <p>Clear Water Bay</p>
-    <p>Hong Kong SAR, China</p>
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
@@ -21,4 +18,17 @@ social: true # includes social icons at the bottom of the page
 
 I am a Ph.D candidate in [Hong Kong University of Science and Technology (HKUST)](https://www.ust.hk/), advised by [Prof. Kai Chen](http://www.cse.ust.hk/~kaichen/). Before that, I received my B.Eng in Software Engineering in [Wuhan University](https://www.whu.edu.cn/) (Outstanding Graduate) in 2020.
 
-My research interests include system for LLMs, data center networking, congestion control and distributed system.
+<!-- My research interests include system for LLMs, data center networking, congestion control and distributed system.  -->
+
+In my research projects, I focus on:
+
+- developing application-oriented optimizations for distributed systems, including [Herald](https://xudongliao.github.io/). These systems are designed to enhance performance by leveraging unique application characteristics, such as utilizing embedding access patterns in DLRM training within Herald.
+- building performant congestion control (CC) schemes using reinforcement learning techniques, including [Astraea](https://xudongliao.github.io/), [Spine](https://xudongliao.github.io/assets/pdf/spine-conext22.pdf), [MOCC](https://xudongliao.github.io/assets/pdf/mocc-eurosys22.pdf). These initiatives are driven by my goal to make Deep Reinforcement Learning (DRL)-based CC schemes fair, efficient and also practical for real-world deployment.
+
+I was fortunate to be advised by [Prof. Yanjiao Chen](https://person.zju.edu.cn/en/0020875) during my time at WHU. Additionally, I am fortunate to collaborate closely with [Prof. Guyue Liu](https://grace-liu.github.io) from Peking University and [Dr. Zhizhen Zhong](http://people.csail.mit.edu/zhizhenzhong/) from MIT on several recent projects.
+
+#### Research Interests
+
+- Distributed Machine Learning System
+- Congestion Control
+- Datacenter Networking

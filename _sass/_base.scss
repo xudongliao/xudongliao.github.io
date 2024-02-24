@@ -421,6 +421,7 @@ blockquote {
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
+  text-align: center;
 
   .container {
     color: var(--global-footer-text-color);
@@ -686,6 +687,9 @@ footer.sticky-bottom {
           background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
+          font-size: 0.85rem;
+          vertical-align: middle;
+          width: 90px;
 
           a {
             color: white;
