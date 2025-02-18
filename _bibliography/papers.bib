@@ -1,11 +1,56 @@
 ---
 ---
 
+@article{mfabric-arxiv,
+  abbr     = {arXiv},
+  title    = {mFabric: An Efficient and Scalable Fabric for Mixture-of-Experts Training},
+  author   = {Liao, Xudong and Sun, Yijun and Tian, Han and Wan, Xinchen and Jin, Yilun and Wang, Zilong and Ren, Zhenghang and Huang, Xinyang and Li, Wenxue and Tse, Kin Fai and Zhong, Zhizhen and Liu, Guyue and Zhang, Ying and Ye, Xiaofeng and Zhang, Yiming and Chen, Kai},
+  year     = {2025},
+  journal  = {arXiv:2501.03905},
+  url      = {https://arxiv.org/abs/2501.03905},
+  pdf      = {mfabric-arxiv.pdf},
+  selected = {true},
+  abstract = {Mixture-of-Expert (MoE) models outperform conventional models by selectively activating different subnets, named \emph{experts}, on a per-token basis. This gated computation generates dynamic communications that cannot be determined beforehand, challenging the existing GPU interconnects that remain \emph{static} during the distributed training process. In this paper, we advocate for a first-of-its-kind system, called mFabric, that unlocks topology reconfiguration \emph{during} distributed MoE training. Towards this vision, we first perform a production measurement study and show that the MoE dynamic communication pattern has \emph{strong locality}, alleviating the requirement of global reconfiguration. Based on this, we design and implement a \emph{regionally reconfigurable high-bandwidth domain} on top of existing electrical interconnects using optical circuit switching (OCS), achieving scalability while maintaining rapid adaptability. We have built a fully functional mFabric prototype with commodity hardware and a customized collective communication runtime that trains state-of-the-art MoE models with \emph{in-training} topology reconfiguration across 32 A100 GPUs. Large-scale packet-level simulations show that mFabric delivers comparable performance as the non-blocking fat-tree fabric while boosting the training cost efficiency (e.g., performance per dollar) of four representative MoE models by 1.2x--1.5x and 1.9x--2.3x at 100 Gbps and 400 Gbps link bandwidths, respectively.}
+}
+
+@inproceedings{wan2025leo,
+  abbr      = {INFOCOM},
+  title     = {A Generic and Efficient Communication Framework for Message-level In-Network Computing},
+  author    = {Wan, Xinchen and Li, Luyang and Tian, Han and Liao, Xudong and Huang, Xinyang and Zeng, Chaoliang and Wang, Zilong and Yang, Xinyu and Cheng, Ke and Ning, Qingsong and Liu, Guyue and Luo, Layong and Chen, Kai},
+  booktitle = {Proceedings of the IEEE International Conference on Computer Communications},
+  series    = {INFOCOM 2025},
+  pdf       = {leo-infocom25.pdf},
+  selected  = {true},
+  year      = {2025}
+}
+
+@inproceedings{xu2025tacc,
+  abbr      = {ASPLOS},
+  title     = {Design and Operation of Shared Machine Learning Clusters on Campus},
+  author    = {Xu, Kaiqiang and Sun, Decang and Wang, Hao and Ren, Zhenghang and Wan, Xinchen and Liao, Xudong and Wang, Zilong and Zhang, Junxue and Chen, Kai},
+  booktitle = {Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+  series    = {ASPLOS 2025},
+  pdf       = {tacc-asplos25.pdf},
+  selected  = {true},
+  year      = {2025}
+}
+
+@inproceedings{jury-eurosys,
+  abbr      = {EuroSys},
+  title     = {Achieving Fairness Generalizability for Learning-based Congestion Control with Jury},
+  author    = {Tian, Han and Liao, Xudong and Sun, Decang and Zeng, Chaoliang and Jin, Yilun and Zhang, Junxue and Wan, Xinchen and Wang, Zilong and Wang, Yong and Chen, Kai},
+  booktitle = {Proceedings of the 20th ACM European Conference on Computer Systems},
+  series    = {EuroSys 2025},
+  pdf       = {jury-eurosys25.pdf},
+  selected  = {true},
+  year      = {2025}
+}
+
 @inproceedings{astraea-eurosys,
   abbr      = {EuroSys},
   title     = {Astraea: Towards Fair and Efficient Learning-based Congestion Control},
   author    = {Liao*, Xudong and Tian*, Han and Zeng, Chaoliang and Wan, Xinchen and Chen, Kai},
-  booktitle = {Proceedings of the 19th European Conference on Computer Systems},
+  booktitle = {Proceedings of the 19th ACM European Conference on Computer Systems},
   selected  = {true},
   series    = {EuroSys 2024},
   year      = {2024},
