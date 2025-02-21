@@ -57,6 +57,10 @@
 - title: Academic Services
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - TON Reviewer
+        - NSDI'25 Review Helper
     - year: 2023
       items:
         - Web chair of 7th Asia-Pacific Workshop on Networking (APNet'23)
@@ -73,6 +77,7 @@
   contents:
     - year: 2024
       items:
+        - EuroSys 2025 Travel Grant, ACM SIGOPS
         - NSDI 2024 Travel Grant, USENIX Association
     - year: 2020
       items:
