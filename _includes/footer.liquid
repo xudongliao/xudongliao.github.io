@@ -31,31 +31,32 @@
 {% endif %}
 
 {% if page.show_clustrmap %}
-<div class="clustrmaps-wrapper">
-  <div id="clustrmap-container">
-    <script type='text/javascript' 
-        id='clustrmaps'
-        src='{{ "//cdn.clustrmaps.com/map_v2.js" | append: "?cl=" | append: site.clustrmaps.color | append: "&w=360" | append: "&t=tt" | append: "&d=" | append: site.clustrmaps.map_id }}'></script>
-    
+  <div class="clustrmaps-wrapper">
+    <div id="clustrmap-container">
+      <script
+        type="text/javascript"
+        id="clustrmaps"
+        src="{{ "//cdn.clustrmaps.com/map_v2.js" | append: "?cl=" | append: site.clustrmaps.color | append: "&w=360" | append: "&t=tt" | append: "&d=" | append: site.clustrmaps.map_id }}"
+      ></script>
+    </div>
   </div>
-</div>
 {% endif %}
 
 <style>
-.clustrmaps-wrapper {
-  margin: 2rem auto 1rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--global-divider-color);
-}
-
-@media (max-width: 768px) {
   .clustrmaps-wrapper {
-    margin: 2rem -1rem;
-    padding-top: 1.5rem;
+    margin: 2rem auto 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--global-divider-color);
   }
-}
 
-.clustrmaps-wrapper {
-  transition: all 0.3s ease;
-}
+  @media (max-width: 768px) {
+    .clustrmaps-wrapper {
+      margin: 2rem -1rem;
+      padding-top: 1.5rem;
+    }
+  }
+
+  .clustrmaps-wrapper {
+    transition: all 0.3s ease;
+  }
 </style>
