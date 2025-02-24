@@ -414,3 +414,8 @@ medium_zoom:
 #   - languages
 #   - interests
 #   - references
+
+clustrmaps:
+  enabled: true
+  map_id: sUH4YQHxvDAb7c1acHO-xw3SSlhSm0JIloQiQS7zryo
+  color: ffffff

@@ -1,6 +1,7 @@
 ---
 layout: about
 title: About
+show_clustrmap: true
 permalink: /
 subtitle: PhD Candidate, HKUST, Hong Kong SAR, China
 
