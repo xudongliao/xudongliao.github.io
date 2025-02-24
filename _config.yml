@@ -80,7 +80,6 @@ lastfm_id: # your lastfm id
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: xudong-liao-602091140
-telegram_username: # your Telegram user name
 scholar_userid: GXo0S_4AAAAJ
 medium_username: # your Medium username
 orcid_id: # your ORCID ID
@@ -267,7 +266,7 @@ jekyll-minifier:
   compress_javascript: false # set to false since we are using terser as the js minifier
   # exclude: ["robots.txt", "assets/js/search/*.js", "assets/libs/**/*"]
   # uglifier_args:
-    # harmony: true
+  # harmony: true
 
 # -----------------------------------------------------------------------------
 # Terser
