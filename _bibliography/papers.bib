@@ -1,16 +1,17 @@
 ---
 ---
 
-@article{mfabric-arxiv,
-  abbr     = {arXiv},
-  title    = {mFabric: An Efficient and Scalable Fabric for Mixture-of-Experts Training},
-  author   = {Liao, Xudong and Sun, Yijun and Tian, Han and Wan, Xinchen and Jin, Yilun and Wang, Zilong and Ren, Zhenghang and Huang, Xinyang and Li, Wenxue and Tse, Kin Fai and Zhong, Zhizhen and Liu, Guyue and Zhang, Ying and Ye, Xiaofeng and Zhang, Yiming and Chen, Kai},
-  year     = {2025},
-  journal  = {arXiv:2501.03905},
-  url      = {https://arxiv.org/abs/2501.03905},
-  pdf      = {mfabric-arxiv.pdf},
-  selected = {true},
-  abstract = {Mixture-of-Expert (MoE) models outperform conventional models by selectively activating different subnets, named experts, on a per-token basis. This gated computation generates dynamic communications that cannot be determined beforehand, challenging the existing GPU interconnects that remain static during the distributed training process. In this paper, we advocate for a first-of-its-kind system, called mFabric, that unlocks topology reconfiguration during distributed MoE training. Towards this vision, we first perform a production measurement study and show that the MoE dynamic communication pattern has strong locality, alleviating the requirement of global reconfiguration. Based on this, we design and implement a regionally reconfigurable high-bandwidth domain on top of existing electrical interconnects using optical circuit switching (OCS), achieving scalability while maintaining rapid adaptability. We have built a fully functional mFabric prototype with commodity hardware and a customized collective communication runtime that trains state-of-the-art MoE models with in-training topology reconfiguration across 32 A100 GPUs. Large-scale packet-level simulations show that mFabric delivers comparable performance as the non-blocking fat-tree fabric while boosting the training cost efficiency (e.g., performance per dollar) of four representative MoE models by 1.2x--1.5x and 1.9x--2.3x at 100 Gbps and 400 Gbps link bandwidths, respectively.}
+@inproceedings{mixnet-sigcomm,
+  abbr      = {SIGCOMM},
+  title     = {MixNet: A Runtime Reconfigurable Optical-Electrical Fabric for Distributed Mixture-of-Experts Training},
+  author    = {Liao, Xudong and Sun, Yijun and Tian, Han and Wan, Xinchen and Jin, Yilun and Wang, Zilong and Ren, Zhenghang and Huang, Xinyang and Li, Wenxue and Tse, Kin Fai and Zhong, Zhizhen and Liu, Guyue and Zhang, Ying and Ye, Xiaofeng and Zhang, Yiming and Chen, Kai},
+  year      = {2025},
+  arxiv     = {2501.03905},
+  pdf       = {mixnet-sigcomm25.pdf},
+  booktitle = {Proceedings of the 2025 ACM SIGCOMM Conference},
+  series    = {SIGCOMM 2025},
+  selected  = {true},
+  abstract  = {Mixture-of-Expert (MoE) models outperform conventional models by selectively activating different subnets, named experts, on a per-token basis. This gated computation generates dynamic communications that cannot be determined beforehand, challenging the existing GPU interconnects that remain static during the distributed training process. In this paper, we advocate for a first-of-its-kind system, called mFabric, that unlocks topology reconfiguration during distributed MoE training. Towards this vision, we first perform a production measurement study and show that the MoE dynamic communication pattern has strong locality, alleviating the requirement of global reconfiguration. Based on this, we design and implement a regionally reconfigurable high-bandwidth domain on top of existing electrical interconnects using optical circuit switching (OCS), achieving scalability while maintaining rapid adaptability. We have built a fully functional mFabric prototype with commodity hardware and a customized collective communication runtime that trains state-of-the-art MoE models with in-training topology reconfiguration across 32 A100 GPUs. Large-scale packet-level simulations show that mFabric delivers comparable performance as the non-blocking fat-tree fabric while boosting the training cost efficiency (e.g., performance per dollar) of four representative MoE models by 1.2x--1.5x and 1.9x--2.3x at 100 Gbps and 400 Gbps link bandwidths, respectively.}
 }
 
 @inproceedings{pallas-atc,
