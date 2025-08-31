@@ -61,7 +61,10 @@ layout: default
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
-      <p>* equal contribution</p>
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <p style="margin: 0;">* equal contribution</p>
+        <a href="{{ '/publications/' | relative_url }}" class="text-decoration-none">View Full Publication List →</a>
+      </div>
       {% include selected_papers.liquid %}
     {% endif %}
 
