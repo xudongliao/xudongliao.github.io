@@ -14,6 +14,17 @@
   abstract  = {Mixture-of-Expert (MoE) models outperform conventional models by selectively activating different subnets, named experts, on a per-token basis. This gated computation generates dynamic communications that cannot be determined beforehand, challenging the existing GPU interconnects that remain static during the distributed training process. In this paper, we advocate for a first-of-its-kind system, called mFabric, that unlocks topology reconfiguration during distributed MoE training. Towards this vision, we first perform a production measurement study and show that the MoE dynamic communication pattern has strong locality, alleviating the requirement of global reconfiguration. Based on this, we design and implement a regionally reconfigurable high-bandwidth domain on top of existing electrical interconnects using optical circuit switching (OCS), achieving scalability while maintaining rapid adaptability. We have built a fully functional mFabric prototype with commodity hardware and a customized collective communication runtime that trains state-of-the-art MoE models with in-training topology reconfiguration across 32 A100 GPUs. Large-scale packet-level simulations show that mFabric delivers comparable performance as the non-blocking fat-tree fabric while boosting the training cost efficiency (e.g., performance per dollar) of four representative MoE models by 1.2x--1.5x and 1.9x--2.3x at 100 Gbps and 400 Gbps link bandwidths, respectively.}
 }
 
+@inproceedings{hermod-sigcomm25-short,
+  abbr      = {SIGCOMM},
+  title     = {Coflow Scheduling for LLM Training},
+  author    = {Wan, Xinchen and Yang, Xinyu and Xu, Kaiqiang and Liao, Xudong and Jin, Yilun and Sun, Yijun and Ren, Zhenghang and Tian, Han and Chen, Kai},
+  year      = {2025},
+  booktitle = {Proceedings of the 2025 ACM SIGCOMM Conference},
+  series    = {SIGCOMM 2025 (Short)},
+  selected  = {false},
+  pdf       = {hermod-sigcomm25short.pdf}
+}
+
 @inproceedings{pallas-atc,
   abbr      = {ATC},
   title     = {Towards Optimal Rack-scale μs-level CPU Scheduling through In-Network Workload Shaping},
